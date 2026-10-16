@@ -56,6 +56,9 @@ cp -r "$HOME/.config/tmux" .config
 rm -rf .config/fastfetch
 cp -r "$HOME/.config/fastfetch" .config
 
+# Custom Aliases
+cp "$HOME/.aliases.sh" .
+
 # Secrets check (only the files you wrote yourself, not the plugins)
 if grep -rnIiE \
     '(token|secret|passw(or)?d|api[_-]?key)[a-z_]*[[:space:]]*[=:]|ghp_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|AKIA[A-Z0-9]{16}|BEGIN [A-Z ]*PRIVATE KEY' \
