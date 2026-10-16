@@ -44,6 +44,18 @@ cp -r "$HOME/.config/alacritty" .config
 rm -rf .config/espanso
 cp -r "$HOME/.config/espanso" .config
 
+# Neovim
+rm -rf .config/nvim
+cp -r "$HOME/.config/nvim" .config
+
+# Tmux
+rm -rf .config/tmux
+cp -r "$HOME/.config/tmux" .config
+
+# Fastfetch
+rm -rf .config/fastfetch
+cp -r "$HOME/.config/fastfetch" .config
+
 # Secrets check (only the files you wrote yourself, not the plugins)
 if grep -rnIiE \
     '(token|secret|passw(or)?d|api[_-]?key)[a-z_]*[[:space:]]*[=:]|ghp_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|AKIA[A-Z0-9]{16}|BEGIN [A-Z ]*PRIVATE KEY' \
