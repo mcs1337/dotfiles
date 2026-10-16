@@ -1,5 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
+zstyle ':omz:plugins:git' aliases no
+
 ZSH_THEME="agnoster"
 
 HIST_STAMPS="dd.mm.yyyy"
